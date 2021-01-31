@@ -21,7 +21,8 @@ class DiscothequeController extends AbstractController
     /**
      * @Route("/", name="accueil")
      */
-    public function home():Response {
+    public function home(): Response
+    {
         return $this->render('discotheque/home.html.twig', [
             'controller_name' => 'DiscothequeController'
         ]);
